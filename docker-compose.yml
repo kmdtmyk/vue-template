@@ -10,3 +10,12 @@ services:
     ports:
       - '8080:8080'
     command: npm start
+  web:
+    image: nginx:1.13.9
+    environment:
+      TZ: Asia/Tokyo
+    ports:
+      - '80:80'
+    volumes:
+      - ./nginx:/etc/nginx
+      - ./log/nginx:/var/log/nginx

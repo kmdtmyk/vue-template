@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kmdtmyk/vue-template#readme",
   "dependencies": {
+    "moment": "^2.20.1",
     "vue": "^2.5.13",
     "vue-router": "^3.0.1"
   },
